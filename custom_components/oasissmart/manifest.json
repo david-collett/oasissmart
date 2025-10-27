@@ -1,0 +1,16 @@
+{
+  "domain": "oasissmart",
+  "name": "Oasis Smart Controller",
+  "version": "0.0.1",
+  "codeowners": ["@david-collett"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/david-collett/oasissmart",
+  "issue_tracker": "https://github.com/david-collett/oasissmart/issues",
+  "homekit": {},
+  "iot_class": "cloud_polling",
+  "quality_scale": "bronze",
+  "requirements": ["boto3>=1.34.51", "aiomqtt>=2.0.1"],
+  "ssdp": [],
+  "zeroconf": []
+}

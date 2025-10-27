@@ -1,0 +1,77 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured"
+    },
+    "error": {
+      "invalid_auth": "Invalid authentication",
+      "invalid_id": "Device ID is invalid",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "unique_id": "Unique Device ID"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "filter_pump_state": {
+        "name": "Filter Pump State"
+      },
+      "sanitiser_state": {
+        "name": "Sanitiser State"
+      },
+      "water_feature_state": {
+        "name": "Water Feature State"
+      },
+      "heat_pump_state": {
+        "name": "Heat Pump State"
+      }
+    },
+    "sensor": {
+      "temp": {
+        "name": "Temperature"
+      },
+      "ph": {
+        "name": "pH"
+      },
+      "orp": {
+        "name": "ORP"
+      }
+    },
+    "switch": {
+      "primeph": {
+        "name": "Prime pH"
+      }
+    },
+    "select": {
+      "filter_pump_mode": {
+        "name": "Filter Pump Mode"
+      },
+      "sanitiser_mode": {
+        "name": "Sanitiser Mode"
+      },
+      "water_feature_mode": {
+        "name": "Water Feature Mode"
+      },
+      "heat_pump_mode": {
+        "name": "Heat Pump Mode"
+      }
+    },
+    "time": {},
+    "number": {
+      "target_temp": {
+        "name": "Target Temperature"
+      },
+      "target_ph": {
+        "name": "Target PH"
+      },
+      "target_orp": {
+        "name": "Target ORP"
+      }
+    }
+  }
+}
