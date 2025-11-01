@@ -35,8 +35,8 @@ The simplest method is using 'HACS':
 - Add the repository URL
 - Select category Integration
 - Click ADD
-- Now from HACS / Integrations you can find Reclaim Energy and click Download
+- Now from HACS / Integrations you can find Oasis Smart and click Download
 - Restart Home Assistant
 
-Now you can add the integration using the ADD INTERGATION button in Settings / Devices & services, search for Reclaim Energy.
+Now you can add the integration using the ADD INTERGATION button in Settings / Devices & services, search for Oasis Smart.
 It will ask you for your Unique Device ID. This is the 17 digit number found on the sticker on the controller or with the instruction booklet.
