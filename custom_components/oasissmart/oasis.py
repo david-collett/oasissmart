@@ -98,23 +98,25 @@ class OasisState:
     modes = ["Off", "On", "Auto"]
 
     modbus_map = {
-        "filter_pump_state": (161, bool, int),
+        "filter_pump_state": (160, bool, int),
         "filter_pump_mode": (
             65336,
             lambda x: OasisState.modes[x],
             modes.index,
         ),
+        "sanitiser_state": (161, bool, int),
         "sanitiser_mode": (
             65337,
             lambda x: OasisState.modes[x],
             modes.index,
         ),
+        "water_feature_state": (168, bool, int),
         "water_feature_mode": (
             65344,
             lambda x: OasisState.modes[x],
             modes.index,
         ),
-        "heat_pump_state": (160, bool, int),
+        "heat_pump_state": (172, bool, int),
         "heat_pump_mode": (
             65348,
             lambda x: OasisState.modes[x],

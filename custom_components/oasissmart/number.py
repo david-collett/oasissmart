@@ -2,7 +2,7 @@
 
 import logging
 
-from homeassistant.components.number import NumberDeviceClass, NumberEntity
+from homeassistant.components.number import NumberDeviceClass, NumberEntity, NumberMode
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import UnitOfElectricPotential, UnitOfTemperature
 from homeassistant.core import HomeAssistant, callback
@@ -30,6 +30,8 @@ async def async_setup_entry(
 
 class NumberBase(OasisEntity, NumberEntity):
     """Represents a number entry."""
+
+    _attr_mode = NumberMode.BOX
 
     @callback
     def _handle_coordinator_update(self) -> None:
