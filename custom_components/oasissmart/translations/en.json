@@ -67,7 +67,7 @@
         "name": "Target Temperature"
       },
       "target_ph": {
-        "name": "Target PH"
+        "name": "Target pH"
       },
       "target_orp": {
         "name": "Target ORP"
