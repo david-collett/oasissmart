@@ -126,7 +126,7 @@ class OasisState:
         "target_temp": (65447, lambda x: signed(x) / 2, lambda x: unsigned(x * 2)),
         "ph": (173, lambda x: x / 10, None),
         "target_ph": (65503, lambda x: x / 10, lambda x: x * 10),
-        "orp": (174, lambda x: x * 10, None),
+        "orp": (174, lambda x: x * 10 if x != 255 else None, None),
         "target_orp": (65502, lambda x: x * 10, lambda x: x / 10),
         "primeph": (65516, bool, int),
         #        "mode5_timer1_start": (40971, lambda x: int(x / 256), lambda x: x * 256),
